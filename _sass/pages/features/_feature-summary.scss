@@ -1,0 +1,23 @@
+.feature-summary {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 30px;
+  .feature-image {
+    flex: 0 0 100px;
+    margin-right: 10px;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .feature-content {
+    flex: 1;
+    .feature-title {
+      font-family: $font-family-heading;
+      font-size: 1.6rem;
+    }
+    p {
+      color: $secondary;
+    }
+  }
+}

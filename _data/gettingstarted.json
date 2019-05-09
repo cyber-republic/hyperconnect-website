@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Documentation",
+    "url": "https://docs.hyperconnect.io/",
+    "description": "Learn how to set up and use your own Internet-of-Things network.",
+    "image": "assets/images/documentation-illustration.svg"
+  },
+  {
+    "title": "Tutorials",
+    "url": "https://docs.hyperconnect.io/tutorials",
+    "description": "Guides, tutorials and reference material to help you build.",
+    "image": "assets/images/tutorials-illustration.svg"
+  },
+  {
+    "title": "Community",
+    "url": "https://forum.cyberrepublic.org/",
+    "description": "Connect, collaborate and create with community members.",
+    "image": "assets/images/community-illustration.svg"
+  }
+]

@@ -1,0 +1,93 @@
+---
+title: HyperConnect - Peer-to-Peer IoT Framework.
+layout: default
+bodyClass: page-home
+---
+
+<div class="intro pb-4">
+  <div class="container">
+        <h1>HyperConnect</h1>
+        <h2>Peer-to-Peer IoT Framework.</h2>
+        <p>100% Open-source. Powered by <a href="https://www.elastos.org/">Elastos.</a></p>
+  </div>
+</div>
+
+<div class="container pt-2">
+  <div class="call">
+    <div class="call-box-top">
+      <div class="call-phone"><strong>Build your own IoT network for free.</strong></div>
+    </div>
+    <div class="call-box-bottom">
+      <a href="https://docs.hyperconnect.io/" class="button">Get started</a>
+    </div>
+  </div>
+</div>
+
+<div class="background--waves"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <img src="assets\images\elastos-logo-horizontal-black.svg" class="img-fluid" alt="Elastos">
+    </div>
+    <div class="col">
+      <img src="assets\images\cyberrepublic-logo-black.svg" class="img-fluid" alt="Elastos">
+    </div>
+    <div class="col-sm">
+      <!-- Column three. -->
+    </div>
+    <div class="col-sm">
+      <!-- Column four. -->
+    </div>
+    <div class="col-sm">
+      <!-- Column five. -->
+    </div>
+    <div class="col-sm">
+      <!-- Column six. -->
+    </div>
+  </div>
+</div>
+
+<div class="container pt-8 pt-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12">
+      <h2 class="title-3 text-dark mb-3">Features</h2>
+    </div>
+    {% for feature in site.features %}
+    <div class="col-12 col-md-4 mb-1">
+      <div class="feature feature-summary">
+        <div class="feature-content">
+          <h2 class="feature-title">
+            <a href="{{site.baseurl}}{{ feature.url }}">{{ feature.title }}</a>
+          </h2>
+          {{ feature.content | markdownify | strip_html | truncate: 100 }}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    <div class="col-12 text-center">
+      <a class="button button-primary mt-2" href="{{site.baseurl}}/features">View All features</a>
+    </div>
+  </div>
+</div>
+
+<div class="container pt-5 pb-5 pt-md-7 pb-md-7">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <h2 class="title-3 text-dark mb-4">Get Started</h2>
+    </div>
+    {% for getstarted in site.data.gettingstarted %}
+
+    <div class="col-12 col-md-6 col-lg-4 mb-2">
+      <a href="{{ getstarted.url }}">
+      <div class="getstarted">
+        {% if getstarted.image %}<div class="getstarted-image"><img alt="{{ getstarted.title }} logo" src="{{ getstarted.image }}" /></div> {% endif %}
+        <h2 class="getstarted-title">{{ getstarted.title }}</h2>
+        <div class="getstarted-content">{{ getstarted.description }}</div>
+      </div>
+      </a>
+    </div>
+
+    {% endfor %}
+  </div>
+</div>

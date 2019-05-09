@@ -1,0 +1,32 @@
+---
+title: HyperConnect - Features
+layout: default
+bodyClass: page-features-list
+---
+
+<div class="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Features that put the 'Fun' in Functionalities.</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pb-6">
+  <div class="row" style="margin-top:100px;">
+    {% for feature in site.features %}
+    <div class="col-12 col-md-4 mb-1">
+      <div class="feature feature-summary">
+        <div class="feature-content">
+          <h2 class="feature-title">
+            <a href="{{site.baseurl}}{{ feature.url }}">{{ feature.title }}</a>
+          </h2>
+          {{ feature.content | markdownify | strip_html | truncate: 130 }}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

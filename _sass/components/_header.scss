@@ -1,0 +1,21 @@
+.header {
+  height: 50px;
+  color: $primary;
+  background-color: #b9314f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 8px 15px rgba(50, 50, 93, 0.2);
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-social {
+    height: inherit;
+    display: none;
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+  }
+}

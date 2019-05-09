@@ -1,0 +1,15 @@
+.page-features-list {
+  background-image: url('../images/features-illustration.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  @include media-breakpoint-up(sm) {
+    background-size: 90%;
+  }
+  @include media-breakpoint-up(md) {
+    background-size: 85%;
+  }
+  @include media-breakpoint-up(lg) {
+    background-size: 60%;
+  }
+}
