@@ -7,13 +7,13 @@
   },
   {
     "title": "Tutorials",
-    "url": "https://docs.hyperconnect.io/tutorials",
+    "url": "https://docs.hyperconnect.io/tutorials/overview/",
     "description": "Guides, tutorials and reference material to help you build.",
     "image": "assets/images/tutorials-illustration.svg"
   },
   {
     "title": "Community",
-    "url": "https://forum.cyberrepublic.org/",
+    "url": "https://forum.cyberrepublic.org/c/hyperconnect",
     "description": "Connect, collaborate and create with community members.",
     "image": "assets/images/community-illustration.svg"
   }
